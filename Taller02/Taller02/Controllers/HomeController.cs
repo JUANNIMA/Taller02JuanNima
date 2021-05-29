@@ -13,6 +13,18 @@ namespace Taller02.Controllers
             return View();
         }
 
+        public ActionResult Create(FormCollection collection)
+        {
+            try
+            {
+                return RedirectToAction("index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
